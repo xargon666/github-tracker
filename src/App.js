@@ -1,6 +1,20 @@
+import { useState } from "react";
 import './App.css'
 
-function App () {
+function App() {
+    const [username, setUsername] = useState("");
+    const [loading, setLoading] = useState(false);
+
+    function handleSubmit(e) {
+        e.preventDefault();
+        searchRepos();
+    }
+    
+
+
+
+
+
     return (
         <div className="page">
             <div className="landing-page-container">

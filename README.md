@@ -4,7 +4,7 @@ Create a cool github tracker.
 
 ## Installation & usage
 - Run `npm i`
-- Run `npm dev` to launch a local server
+- Run `npm run dev` to launch a local server
   - Setup to run on `http://localhost:3001`
 
 ## Technologies

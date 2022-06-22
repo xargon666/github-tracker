@@ -1,4 +1,4 @@
-
+import React from 'react';
 
 function RepoDetails({details, loading }) {
     if (loading) {
@@ -27,3 +27,5 @@ function RepoDetails({details, loading }) {
         </div>
     )
 }
+
+export default RepoDetails;

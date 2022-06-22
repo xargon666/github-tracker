@@ -7,6 +7,8 @@ function App() {
     const [username, setUsername] = useState("");
     const [loading, setLoading] = useState(false);
     const [repos, setRepos] = useState([]);
+    const [details, setDetails] = useState({});
+    const [detailsLoading, setDetailsLoading] = useState(false);
 
     function handleSubmit(e) {
         e.preventDefault();
@@ -51,6 +53,7 @@ function App() {
                         {repos.map(renderRepo)}
                     </div>
                 </div>
+                <RepoDetails details={details} loading={detailsLoading} />
             </div>
         </div>
     )

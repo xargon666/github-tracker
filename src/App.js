@@ -22,6 +22,16 @@ function App() {
         });
     }
 
+    function renderRepo(repo) {
+        return(
+            <div className="row" key={repo.id}>
+                <h2 className="repo-name">
+                    {repo.name}
+                </h2>
+            </div>
+        )
+    }
+
 
 
 
@@ -38,11 +48,23 @@ function App() {
                         />
                         <button className="button" onClick={handleSubmit}>{loading ? "Searching..." : "Search"}</button>
                     </form>
+                    <div className="results-container">
+                        {repos.map(renderRepo)}
+                    </div>
                 </div>
             </div>
         </div>
     )
 }
+
+
+
+
+
+
+
+
+
 
 
 /*

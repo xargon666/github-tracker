@@ -4,13 +4,23 @@ import './App.css'
 function App() {
     const [username, setUsername] = useState("");
     const [loading, setLoading] = useState(false);
+    const [repos, setRepos] = useState([]);
 
     function handleSubmit(e) {
         e.preventDefault();
         searchRepos();
-    }
-    
+    };
 
+    function searchRepos() {
+        setLoading(true);
+        axios({
+            method: "get",
+            url: `https://api.github.com/users/${username}/repos`,
+        }).then(res => {
+            setLoading(false);
+            setRepos(res.data);
+        });
+    }
 
 
 

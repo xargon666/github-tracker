@@ -48,7 +48,7 @@ function App() {
     }
 
     return (
-        <div className="page">
+        <div className="page" role="wrapper">
             <div className="landing-page-container">
                 <div className="left-side">
                     <form className="form">

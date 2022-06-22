@@ -8,20 +8,20 @@
 
 .page {
     height: 100vh;
-    width: 100vw;
+    width: auto;
   }
   
   .landing-page-container {
-    height: 100%;
+    height: auto;
     min-height: 100%;
     width: 100%;
     display: flex;
     background-color: #282D35;
-    overflow-y: scroll;
+    /* overflow-y: scroll; */
   }
   
   .left-side {
-    height: 100%;
+    height: auto;
     width: 75%;
     display: flex;
     flex-direction: column;

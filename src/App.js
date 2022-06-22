@@ -40,7 +40,7 @@ function App() {
         setDetailsLoading(true);
         axios({
             method: "get",
-            url: `https://api.github.com/users/${username}/${repoName}`,
+            url: `https://api.github.com/repos/${username}/${repoName}`,
         }).then(res => {
             setDetailsLoading(false);
             setDetails(res.data);

@@ -19,3 +19,15 @@ function App () {
         </div>
     )
 }
+
+
+/*
+const URL = `https://api.github.com/users/${username}/repos`
+
+const getData = async () => {
+const res = await fetch(URL)
+const data = await res.json()
+
+// do something with data
+}
+*/
